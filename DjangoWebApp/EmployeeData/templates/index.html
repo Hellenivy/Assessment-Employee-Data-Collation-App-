@@ -1,0 +1,89 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+    {% load staticfiles %}  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>  
+</head>  
+<body>  
+<form method="POST" class="post-form" action="/emp">  
+        {% csrf_token %}  
+    <div class="container">  
+<br>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <h3>Enter Details</h3>  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Id:</label>  
+    <div class="col-sm-4">  
+      {{ form.eid }}  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Name:</label>  
+    <div class="col-sm-4">  
+      {{ form.ename }}  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Name:</label>  
+    <div class="col-sm-4">  
+      {{ form.ename }}  
+    </div>  
+  </div>  
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Age:</label>  
+    <div class="col-sm-4">  
+      {{ form.eage }}  
+    </div>  
+  </div>
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Date_of_Birth:</label>  
+    <div class="col-sm-4">  
+      {{ form.edate_of_birth }}  
+    </div>  
+  </div>    
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Date_of_Employment:</label>  
+    <div class="col-sm-4">  
+      {{ form.edata_of_employment }}  
+    </div>  
+  </div>
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Position:</label>  
+    <div class="col-sm-4">  
+      {{ form.eposition }}  
+    </div>  
+  </div> 
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Department:</label>  
+    <div class="col-sm-4">  
+      {{ form.edepartment }}  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Salary</label>  
+    <div class="col-sm-4">  
+      {{ form.esalary }}  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Employee Supervisors:</label>  
+    <div class="col-sm-4">  
+      {{ form.esupervisors }}  
+    </div>  
+  </div>     
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <button type="submit" class="btn btn-primary">Submit</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+</body>  
+</html>  
